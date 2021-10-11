@@ -10,6 +10,7 @@ import SwiftUI
 struct TaskListView: View {
     
     @StateObject var taskModel = TaskModel()
+    @AppStorage("title", store: UserDefaults(suiteName: "App06-TODO")) var title: String = "Tarea"
     
     var body: some View {
         NavigationView {
@@ -17,8 +18,8 @@ struct TaskListView: View {
                 List {
                     if taskModel.tasks.count > 0 {
                         ForEach(taskModel.tasks) { task in
-                            NavigationLink(destination: TaskDetailView(taskModel: taskModel, task: task)) {
-                                Text("Nombre: " + task.task)
+                            NavigationLink(destination: TaskDetailView(taskModel: taskModel, task: task, mode: .edit)) {
+                                Text(task.task)
                             }
                         }
                         .onDelete { indexSet in
@@ -34,22 +35,19 @@ struct TaskListView: View {
                 }
                 VStack {
                     Spacer()
-                    Button {
-                        addTask()
-                    } label: {
+                    NavigationLink(destination: TaskDetailView(taskModel: taskModel, task: Task.dummy, mode: .add)) {
                         Image(systemName: "plus.circle.fill")
                             .font(.largeTitle)
                             .foregroundColor(.green)
                     }
-
                 }
             }
             .navigationBarTitle("Tareas", displayMode: .inline)
             .listStyle(DefaultListStyle())
             .toolbar {
                 ToolbarItem(placement: .principal) {
-                    Text("Tareas")
-                        .font(.largeTitle)
+                    Text(title)
+                        .font(.title)
                         .foregroundColor(.orange)
                 }
                 ToolbarItem(placement: .navigationBarTrailing) {
@@ -62,16 +60,7 @@ struct TaskListView: View {
     func deleteTask(task: Task) {
         taskModel.removeData(task: task)
     }
-    
-    func addTask() {
-        
-        let task = Task(task: "Tarea 3", category_id: "03", priority_id: "03", is_completed: false, date_created: Date(), due_date: Date())
-        
-        taskModel.addData(task: task)
-        
-    }
-    
-    
+
 }
 
 struct TaskListView_Previews: PreviewProvider {

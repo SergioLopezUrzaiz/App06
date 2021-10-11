@@ -20,6 +20,12 @@
 		FB02C1FE270F5C1F0028B739 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB02C1FD270F5C1F0028B739 /* Task.swift */; };
 		FB02C201270F5DBE0028B739 /* TaskModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB02C200270F5DBE0028B739 /* TaskModel.swift */; };
 		FB02C206270F6DDC0028B739 /* TaskDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB02C205270F6DDC0028B739 /* TaskDetailView.swift */; };
+		FB07B6352714919F0056A5E5 /* CategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB07B6342714919F0056A5E5 /* CategoryView.swift */; };
+		FB07B6372714A0C80056A5E5 /* PriorityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB07B6362714A0C80056A5E5 /* PriorityView.swift */; };
+		FB07B6392714A76B0056A5E5 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB07B6382714A76B0056A5E5 /* Date.swift */; };
+		FB07B63B2714AA880056A5E5 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB07B63A2714AA880056A5E5 /* Enums.swift */; };
+		FB966F2B271489EF0003D435 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB966F2A271489EF0003D435 /* Category.swift */; };
+		FB966F2D27148AD20003D435 /* Priority.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB966F2C27148AD20003D435 /* Priority.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +39,12 @@
 		FB02C1FD270F5C1F0028B739 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		FB02C200270F5DBE0028B739 /* TaskModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskModel.swift; sourceTree = "<group>"; };
 		FB02C205270F6DDC0028B739 /* TaskDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskDetailView.swift; sourceTree = "<group>"; };
+		FB07B6342714919F0056A5E5 /* CategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryView.swift; sourceTree = "<group>"; };
+		FB07B6362714A0C80056A5E5 /* PriorityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriorityView.swift; sourceTree = "<group>"; };
+		FB07B6382714A76B0056A5E5 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
+		FB07B63A2714AA880056A5E5 /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
+		FB966F2A271489EF0003D435 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		FB966F2C27148AD20003D435 /* Priority.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Priority.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +86,9 @@
 				FB02C1DD270F56140028B739 /* App06App.swift */,
 				FB02C1DF270F56140028B739 /* TaskListView.swift */,
 				FB02C205270F6DDC0028B739 /* TaskDetailView.swift */,
+				FB07B6342714919F0056A5E5 /* CategoryView.swift */,
+				FB07B63A2714AA880056A5E5 /* Enums.swift */,
+				FB07B6362714A0C80056A5E5 /* PriorityView.swift */,
 				FB02C1E1270F56150028B739 /* Assets.xcassets */,
 				FB02C1E6270F56150028B739 /* Info.plist */,
 				FB02C1ED270F56AE0028B739 /* GoogleService-Info.plist */,
@@ -94,7 +109,10 @@
 			isa = PBXGroup;
 			children = (
 				FB02C1FD270F5C1F0028B739 /* Task.swift */,
+				FB966F2C27148AD20003D435 /* Priority.swift */,
+				FB966F2A271489EF0003D435 /* Category.swift */,
 				FB02C200270F5DBE0028B739 /* TaskModel.swift */,
+				FB07B6382714A76B0056A5E5 /* Date.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -180,10 +198,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB02C1E0270F56140028B739 /* TaskListView.swift in Sources */,
+				FB07B6392714A76B0056A5E5 /* Date.swift in Sources */,
 				FB02C1FE270F5C1F0028B739 /* Task.swift in Sources */,
+				FB07B6372714A0C80056A5E5 /* PriorityView.swift in Sources */,
+				FB966F2D27148AD20003D435 /* Priority.swift in Sources */,
 				FB02C201270F5DBE0028B739 /* TaskModel.swift in Sources */,
 				FB02C1DE270F56140028B739 /* App06App.swift in Sources */,
 				FB02C206270F6DDC0028B739 /* TaskDetailView.swift in Sources */,
+				FB07B6352714919F0056A5E5 /* CategoryView.swift in Sources */,
+				FB966F2B271489EF0003D435 /* Category.swift in Sources */,
+				FB07B63B2714AA880056A5E5 /* Enums.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
